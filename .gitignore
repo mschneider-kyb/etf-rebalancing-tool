@@ -13,7 +13,6 @@ __pycache__/
 
 # PyInstaller Ordner (später)
 build/
-dist/
 dist.zip
 *.spec
 *.pyc
