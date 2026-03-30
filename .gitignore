@@ -1,0 +1,18 @@
+# Virtuelle Umgebung ignorieren
+PyVenv/
+venv/
+.env
+.idea/
+
+# Python Cache-Dateien
+__pycache__/
+*.py[cod]
+
+# macOS spezifische Dateien
+.DS_Store
+
+# PyInstaller Ordner (später)
+build/
+dist/
+*.spec
+*.pyc
