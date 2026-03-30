@@ -32,7 +32,7 @@ def get_break_even(current_value1: float, _, current_value2: float, __, ___,
 def calculate() -> None:
     try:
         # get values and compute result
-        entry_values = [float(entry.get().replace(",", ".")) for entry in
+        entry_values = [float(entry.get().replace(",", ".").strip()) for entry in
                         entry_entities]
 
         # validate values
