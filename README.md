@@ -1,7 +1,7 @@
 # 📈 ETF Rebalancing Calculator
 
-Ein modernes GUI-Tool zur automatischen Berechnung der optimalen Kaufanteile für ein
-Zwei-ETF-Portfolio (z.B. 70/30-Strategie).
+Ein GUI-Tool zur automatischen Berechnung der optimalen Kaufanteile für ein
+Zwei-ETF-Portfolio (z.B. 70/30-Strategie) - ohne etwas installieren zu müssen.
 
 ## ❓ Das Problem
 
@@ -35,6 +35,14 @@ wiederherzustellen. In diesem Fall müsste man Anteile des übergewichteten ETFs
 * **Kein Installation:** Kann mit PyInstaller als eigenständige Anwendung exportiert
   werden.
 
+## 🪟 GUI
+
+![GUI](data/GUI.png)
+
+* **Wert**: Gesamtwert eines ETFs. Beispiel: Wenn 10 Anteile gehalten werden und ein Anteil zu 50 Euro gehandelt wird (Kurs), dann ist der Wert dieses ETFs 500 Euro.
+* **Kurs**: Preis zu dem der ETF gerade gehandelt wird.
+* **Einzahlung**: Betrag den man neu einzahlen will.
+
 ## 🚀 Installation & Benutzung
 
 ### Für Nutzer (MacOS)
@@ -45,22 +53,32 @@ wiederherzustellen. In diesem Fall müsste man Anteile des übergewichteten ETFs
 ### Für Entwickler
 
 1. Repository klonen:
+
    ```bash
-   git clone [https://github.com/mschneider-kyb/etf-rebalancing-tool.git](https://github.com/mschneider-kyb/etf-rebalancing-tool.git)
+   git clone https://github.com/mschneider-kyb/etf-rebalancing-tool.git
+   ```
+
+2. App erstellen:
+
+   ```bash
+   pyinstaller --onefile --windowed main.py
+   ```
+
+*Hinweis: Die App wurde bisher nur als Macos-App erstellt. Für eine Windows-exe müsste obiger Befehl auf einem Windows Rechner ausgeführt werden.*
 
 ## ⚖️ Lizenzen von Drittanbietern
 
 Dieses Projekt verwendet die folgende Open-Source-Software:
 
-- **CustomTkinter** (MIT-Lizenz) – Copyright (c) 2023 Tom Schimansky
+* **CustomTkinter** (MIT-Lizenz) – Copyright (c) 2023 Tom Schimansky
   Verwendet für die moderne grafische Benutzeroberfläche.
 
-- **PyInstaller** (GPL-Lizenz mit Ausnahmeregelung) – Copyright (c) 2010-2026
+* **PyInstaller** (GPL-Lizenz mit Ausnahmeregelung) – Copyright (c) 2010-2026
   PyInstaller Development Team
   Verwendet zum Erstellen der ausführbaren (.exe) Datei. Die "Bootloader-Exception"
   erlaubt es, Programme zu verbreiten, ohne den eigenen Quellcode offenlegen zu müssen.
 
-- **Python** (PSF-Lizenz) – Copyright (c) Python Software Foundation
+* **Python** (PSF-Lizenz) – Copyright (c) Python Software Foundation
   Die zugrunde liegende Programmiersprache.
 
 Alle Lizenzen der verwendeten Bibliotheken sind in der kompilierten Anwendung enthalten
