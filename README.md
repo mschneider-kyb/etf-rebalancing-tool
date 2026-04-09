@@ -18,15 +18,12 @@ geplanten Einzahlung die ideale Verteilung.
 ### Besondere Logik: "No-Sell-Rebalancing"
 
 Oft ist die geplante Einzahlung zu gering, um das Gleichgewicht allein durch Käufe
-wiederherzustellen. In diesem Fall müsste man Anteile des übergewichteten ETFs *
-*verkaufen**.
+wiederherzustellen. In diesem Fall müsste man Anteile des übergewichteten ETFs **verkaufen**.
 
 * **Das Problem:** Verkäufe lösen Steuern und Gebühren aus und kosten Performance.
 * **Die Lösung des Tools:** Wenn ein Verkauf nötig wäre (negatives Ergebnis), berechnet
   das Programm automatisch den **Mindestinvestitionsbetrag**, der nötig ist, um das
   Zielportfolio allein durch Käufe (ohne Verkäufe) wieder ins Lot zu bringen.
-
----
 
 ## ✨ Features
 
@@ -37,8 +34,6 @@ wiederherzustellen. In diesem Fall müsste man Anteile des übergewichteten ETFs
 * **Validierung:** Verhindert Abstürze durch ungültige Zeichen oder negative Werte.
 * **Kein Installation:** Kann mit PyInstaller als eigenständige Anwendung exportiert
   werden.
-
----
 
 ## 🚀 Installation & Benutzung
 
@@ -51,9 +46,7 @@ wiederherzustellen. In diesem Fall müsste man Anteile des übergewichteten ETFs
 
 1. Repository klonen:
    ```bash
-   git clone [https://github.com/dein-nutzername/etf-rebalancer.git](https://github.com/dein-nutzername/etf-rebalancer.git)
-
----
+   git clone [https://github.com/mschneider-kyb/etf-rebalancing-tool.git](https://github.com/mschneider-kyb/etf-rebalancing-tool.git)
 
 ## ⚖️ Lizenzen von Drittanbietern
 
